@@ -4,6 +4,47 @@ Primary (yellow): #FFDA23;
 Secondary (teal): #115F7E;
 */
 
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #FFDA23;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  box-shadow: 0px 3px 5px 0px rgba(15, 0, 15, 0.5);
+  width:100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0px 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+main {
+  padding-top: 136px;
+}
+
+#hero {
+  background-color: #ECF0F1;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Raleway', sans-serif;
@@ -13,13 +54,18 @@ body {
   color: #202020;
 }
 
+#contact {
+  padding-top: 15px;
+  background-color: #ECF0F1;
+}
+
 h1, h2, h3, h4 {
   font-family: 'Josefin+Sans', sans-serif;
   color: #115F7E;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 h1 {
-  font-size: 2.5em;
+  font-size: 2.3em;
   font-weight: 700;
 }
 
@@ -39,6 +85,24 @@ h4 {
 
 img {
   width: 100%;
+}
+
+svg {
+  width: 250px;
+}
+
+#contact svg {
+  width: 36px;
+}
+
+#contact ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#contact ul > li {
+  display: inline;
 }
 
 a {
@@ -66,7 +130,7 @@ a:active {
   color:#FFFFFF;
   font-weight: 500;
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
   border-radius: 4px;
   border-bottom: 2px solid #808080;
   transition: 0.2s opacity;
@@ -88,8 +152,7 @@ a:active {
 .button.contact {
   background-color: #FFDA23;
   color:#202020;
-  text-transform: uppercase;
-  padding: 10px;
+  text-transform: "uppercase";
   border: 2px solid #202020;
 }
 
@@ -99,4 +162,23 @@ a:active {
 
 .button.contact:active {
   background-color: #FFFFFF;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0px; /* 25px top and bottom, 0 left and right */
+  padding-bottom: 25px;
+}
+
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
+
+.center {
+  text-align: center;
 }
