@@ -43,6 +43,7 @@ main {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
 
 body {
@@ -89,6 +90,12 @@ img {
 
 svg {
   width: 250px;
+}
+
+#svgsand svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 #contact svg {
@@ -175,10 +182,121 @@ a:active {
   padding-bottom: 25px;
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #work .row {
   padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
 }
 
 .center {
   text-align: center;
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+  text-align: unset;
+  padding: 20px 0 13px;
+ }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 17px;
+  }
+
+  main {
+    padding-top:110px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  h3 {
+    margin-top: 0px;
+  }
+
+  #hero span {
+  display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-3 {
+    width: 30%;
+  }
+
+  [class*="col-"] {
+  float: left;
+  padding: 0 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+}
+
+
+/*animation*/
+@keyframes color-change {
+  0% {fill: #E6E6E6;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+#_x3C_moon_x3E_ {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes batA-move {
+  from {transform: translate(-350px,50px);}
+  to {transform: translate(100px,10px);}
+}
+
+#_x3C_batWingS_x3E_ {
+  animation-duration: 6s;
+  animation-name: batA-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes batB-move {
+  from {transform: translate(-100px,120px);}
+  to {transform: translate(0px,10px);}
+  from {transform: rotate(-15deg);}
+  to {transform: rotate(15deg);}
+}
+
+#_x3C_batWingsT_x3E_ {
+  animation-duration: 3s;
+  animation-name: batB-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
