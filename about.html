@@ -9,12 +9,14 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/b9ec442e0d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <a href="index.html">
         <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 width="1144.5px" height="70px" viewBox="0 0 1144.5 216" enable-background="new 0 0 1144.5 216" xml:space="preserve">
@@ -106,13 +108,15 @@
         </g>
         </svg>
       </a>
-      <nav id="nav">
+      <nav>
         <ul>
           <li><a href="index.html" class="button">Work</a></li>
           <li><a href="about.html" class="button contact">About</a></li>
-          <li><a href="#contact" class="button">Contact</a></li>
+          <li><a href="#contact" class="button" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
+      </div>
     </div>
   </header>
 
@@ -120,17 +124,18 @@
     <div><!--orange div1-->
       <div id="hero"><!--yellow div-->
         <div class="container">
-          <h1 class="center">About</h1>
-          <picture>
+          <picture class="big">
             <source srcset="img/profile_1x.jpg" media="(max-width:767px)">
             <img src="img/profile_2x.jpg" alt="Bianca Kolendo">
           </picture>
         </div>
       </div>
       <div><!--olive div-->
-        <div class="container row">
-          <div id="story" class="col-lg-7"><!--column 1-->
-            <h2 class="center">My Story</h2>
+
+        <div class="container">
+          <div class="row">
+            <div id="story" class="col-md-7"><!--column 1-->
+            <h2 class="center">About me</h2>
             <p>
               Texan by way of the East coast. I’m an animator, crafter, designer, hobby collector, illustrator, and cat lady.
               <br><br>
@@ -145,7 +150,7 @@
             </a>
             </div>
           </div>
-          <div id="skills" class="col-lg-5"><!--column 2-->
+          <div id="skills" class="col-md-5"><!--column 2-->
             <h2 class="center">Skills & Tools</h2>
             <div><!--olive column div-->
               <div class="col-md-6">
@@ -170,6 +175,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
   </main>
 

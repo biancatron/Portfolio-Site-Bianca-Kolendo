@@ -9,12 +9,14 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/b9ec442e0d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <a href="index.html">
         <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 width="1144.5px" height="70px" viewBox="0 0 1144.5 216" enable-background="new 0 0 1144.5 216" xml:space="preserve">
@@ -106,23 +108,38 @@
         </g>
         </svg>
       </a>
-      <nav id="nav">
+      <nav>
         <ul>
-          <li><a href="index.html" class="button">Work</a></li>
+          <li><a href="index.html" class="button contact">Work</a></li>
           <li><a href="about.html" class="button">About</a></li>
-          <li><a href="#contact" class="button">Contact</a></li>
+          <li><a href="#contact" class="button" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
+      </div>
     </div>
   </header>
+
   <main>
+
+    <div class="sidenav">
+      <a href="#section-m"><b>Backyard Bosses</b></a>
+      <a href="#section-1">Inspiration</a>
+      <a href="#section-2">Research</a>
+      <a href="#section-3">User Journey + Flow</a>
+      <a href="#section-4">Wireframes + Mockups</a>
+      <a href="#section-5">Usability Testing</a>
+      <a href="#section-6">Conclusion</a>
+    </div>
+
+    <div class="main">
 
     <div>
       <div id="hero">
         <div class="container">
           <!--project intro-->
-          <h1>Backyard Bosses</h1>
-          <picture>
+          <h1 id="section-m">Backyard Bosses</h1>
+          <picture class="big">
             <source srcset="img/backyardBosses/backyardBosses_1x.jpg" media="(max-width:767px)">
             <img src="img/backyardBosses/backyardBosses_2x.jpg" alt="Hand holding phone in backyard">
           </picture>
@@ -153,12 +170,12 @@
             <p>September 2020 - April 2021</p>
           </div>
 
-          <div>
+          <div id="section-1">
             <!--project section-->
             <h3>Inspiration</h3>
             <p>As a new homeowner myself, I began creating Backyard Bosses out of my own curiosities. I'm fortunate to know a variety of homeowners- from recent purchasers to long time dwellers, experimental DIYers to nervous starters, families, pet owners, party hosts, gardeners, and more. Having this network helped me start thinking about my potential user's problems more broadly. I outlined these user problems through the Double Diamond Strategy.
             </p>
-            <picture>
+            <picture class="big">
               <source srcset="img/backyardBosses/postit_1x.jpg" media="(max-width:767px)">
               <img src="img/backyardBosses/postit_2x.jpg" alt="Post-it note planning">
             </picture>
@@ -170,12 +187,16 @@
             </p>
           </div>
 
-          <div>
+          <div id="section-2">
             <!--project section-->
-              <div>
+            <div class="row">
+              <div class="big column col-md-6">
                   <img src="img/backyardBosses/justAnswer.png" alt="SWOT Analysis for JustAnswer">
+              </div>
+              <div class="big column col-md-6">
                   <img src="img/backyardBosses/prestoExperts.png" alt="SWOT Analysis for Presto Experts">
               </div>
+            </div>
             <h3>Competitive Analysis</h3>
             <p>To get a better idea of what's available on the market, I researched top competitors Just Answer + Presto Experts. Both services offer 24/7 outreach, through chat or a phone call, to verified Experts in a wide range of fields. Unfortunately, both of these also have complaints about their costs, which highlighted an opportunity for Backyard Bosses. After researching these competitors for their key objectives, overall strategy, and market advantages, I was able to create these SWOT analysis.
             </p>
@@ -195,22 +216,27 @@
                 <li>Help is first found from family or close friends</li>
                 <li>Having an inaccurate time estimate for a project will discourage homeowners from completing it</li>
               </ul>
-              <div>
-                <picture>
+              <div class="row"><!--row for columns-->
+                <div class="column col-md-6"><!--column1-->
+                <picture class="big">
                   <source srcset="img/backyardBosses/taskChat_1x.jpg" media="(max-width:767px)">
                   <img src="img/backyardBosses/taskChat_2x.jpg" alt="User task to connect with Expert">
                 </picture>
-                <picture>
+                </div>
+                <div class="column col-md-6"><!--column2-->
+                <picture class="big">
                   <source srcset="img/backyardBosses/taskVideo_1x.jpg" media="(max-width:767px)">
                   <img src="img/backyardBosses/taskVideo_2x.jpg" alt="User task to watch video guide">
                 </picture>
+                </div>
               </div>
+            </div>
           </div>
 
           <div>
             <!--project section-->
-              <div>
-                <picture>
+              <div id="section-3">
+                <picture class="big">
                   <source srcset="img/backyardBosses/userJourney_1x.jpg" media="(max-width:767px)">
                   <img src="img/backyardBosses/userJourney_2x.jpg" alt="User journey to completing a butterfly garden">
                 </picture>
@@ -223,7 +249,7 @@
           <div>
             <!--project section-->
               <div>
-                <picture>
+                <picture class="big">
                   <source srcset="img/backyardBosses/sitemap_1x.jpg" media="(max-width:767px)">
                   <img src="img/backyardBosses/sitemap_2x.jpg" alt="Sitemap for Backyard Bosses">
                 </picture>
@@ -235,12 +261,12 @@
 
           <div>
             <!--project section-->
-              <div>
-                <picture>
+              <div id="section-4">
+                <picture class="big">
                   <source srcset="img/backyardBosses/loFiWireframes_1x.jpg" media="(max-width:767px)">
                   <img src="img/backyardBosses/loFiWireframes_2x.jpg" alt="Low fidelity wireframes">
                 </picture>
-                <picture>
+                <picture class="big">
                   <source srcset="img/backyardBosses/midFiWireframes_1x.jpg" media="(max-width:767px)">
                   <img src="img/backyardBosses/midFiWireframes_2x.jpg" alt="Mid fidelity wireframes">
                 </picture>
@@ -252,8 +278,8 @@
 
           <div>
             <!--project section-->
-              <div>
-                <picture>
+              <div id="section-5">
+                <picture class="big">
                   <source srcset="img/backyardBosses/userInt_1x.jpg" media="(max-width:767px)">
                   <img src="img/backyardBosses/userInt_2x.jpg" alt="Video screenshot of usability test">
                 </picture>
@@ -325,7 +351,7 @@
           <div>
             <!--project section-->
               <div>
-                <picture>
+                <picture class="big">
                   <source srcset="img/backyardBosses/hiFiWireframes_1x.jpg" media="(max-width:767px)">
                   <img src="img/backyardBosses/hiFiWireframes_2x.jpg" alt="High fidelity wireframes">
                 </picture>
@@ -335,7 +361,7 @@
             </p>
           </div>
 
-          <div>
+          <div id="section-6">
             <h2 class="center">Reflection + Conclusion</h2>
             <p>
               Backyard Bosses can always improve, and the best way to do that is with continued user testing. Throughout this process, I’ve heard of great feature suggestions and have tucked away a few ideas of my own. With this base of functionality, Backyard Bosses is also a good playground to test bells and whistles, like animation.

@@ -10,8 +10,7 @@ Secondary (teal): #115F7E;
 
 header {
   background-color: #FFDA23;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   position: fixed;
   box-shadow: 0px 3px 5px 0px rgba(15, 0, 15, 0.5);
   width:100%;
@@ -23,10 +22,6 @@ nav > ul {
   margin: 0px;
 }
 
-nav > ul > li {
-  display: inline-block;
-}
-
 nav > ul > li > a {
   padding: 0px 15px;
   text-transform: uppercase;
@@ -34,9 +29,68 @@ nav > ul > li > a {
   color: #4a4a4a;
 }
 
-main {
-  padding-top: 136px;
+.navtoggle, .navtoggle.responsive {
+  position: relative;
 }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-size: 20px;
+  padding-right: 0px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+main {
+  padding-top: 92px;
+}
+
+/* SIDEBAR NAVIGATION */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 120px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 200; /* Stay at the top */
+  left: 0;
+  background-color: #202020;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 15px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 10px 8px 10px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Josefin+Sans', sans-serif;
+  color: #FFDA23;
+  display: block;
+}
+
+.sidenav a:visited {
+  color: #FFDA23;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  margin-bottom: 10px;
+  padding: 0px 10px;
+}
+
 
 #hero {
   background-color: #ECF0F1;
@@ -84,18 +138,17 @@ h4 {
   font-weight: 700;
 }
 
+.big img {
+  width: 50%;
+  text-align: center;
+}
+
 img {
   width: 100%;
 }
 
 svg {
-  width: 250px;
-}
-
-#svgsand svg {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
+  max-width: 250px;
 }
 
 #contact svg {
@@ -196,21 +249,45 @@ a:active {
   text-align: center;
 }
 
+
 @media only screen and (min-width: 640px) {
-  header {
-  text-align: unset;
-  padding: 20px 0 13px;
+ svg {
+   max-width: 250px;
  }
+
+ .modal-content {
+   width: 100%;
+ }
+}
 
   nav {
     width: auto;
     float: right;
-    margin-top: 17px;
   }
 
-  main {
-    padding-top:110px;
+  nav > ul {
+    margin-top: 15px;
   }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .sidenav {width: 160px}
+  .sidenav {padding-top: 20px;}
+  .sidenav a {font-size: 16px;}
+  .main {margin-left: 160px;}
+}
+
+#
 
   body {
     font-size: 18px;
@@ -224,12 +301,12 @@ a:active {
   display: block;
   }
 
-  .col-md-6 {
-    width: 50%;
-  }
-
   .col-md-3 {
     width: 30%;
+  }
+
+  .col-md-6 {
+    width: 50%;
   }
 
   [class*="col-"] {
@@ -255,48 +332,4 @@ a:active {
 }
 
 @media only screen and (min-width: 1440px) {
-}
-
-
-/*animation*/
-@keyframes color-change {
-  0% {fill: #E6E6E6;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
-
-#_x3C_moon_x3E_ {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes batA-move {
-  from {transform: translate(-350px,50px);}
-  to {transform: translate(100px,10px);}
-}
-
-#_x3C_batWingS_x3E_ {
-  animation-duration: 6s;
-  animation-name: batA-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes batB-move {
-  from {transform: translate(-100px,120px);}
-  to {transform: translate(0px,10px);}
-  from {transform: rotate(-15deg);}
-  to {transform: rotate(15deg);}
-}
-
-#_x3C_batWingsT_x3E_ {
-  animation-duration: 3s;
-  animation-name: batB-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
 }

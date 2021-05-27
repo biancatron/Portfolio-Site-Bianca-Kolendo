@@ -9,12 +9,14 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/b9ec442e0d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <a href="index.html">
         <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 width="1144.5px" height="70px" viewBox="0 0 1144.5 216" enable-background="new 0 0 1144.5 216" xml:space="preserve">
@@ -110,9 +112,11 @@
         <ul>
           <li><a href="index.html" class="button contact">Work</a></li>
           <li><a href="about.html" class="button">About</a></li>
-          <li><a href="#contact" class="button">Contact</a></li>
+          <li><a href="#contact" class="button" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
+      </div>
     </div>
   </header>
 
