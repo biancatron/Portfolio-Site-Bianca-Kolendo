@@ -59,7 +59,7 @@ main {
   width: 120px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
-  top: 200; /* Stay at the top */
+  top: 100; /* Stay at the top */
   left: 0;
   background-color: #202020;
   overflow-x: hidden; /* Disable horizontal scroll */
@@ -83,14 +83,6 @@ main {
 .sidenav a:hover {
   color: #f1f1f1;
 }
-
-/* Style page content */
-.main {
-  margin-left: 160px; /* Same as the width of the sidebar */
-  margin-bottom: 10px;
-  padding: 0px 10px;
-}
-
 
 #hero {
   background-color: #ECF0F1;
@@ -225,6 +217,12 @@ a:active {
 }
 
 /* Layout styling */
+/*for side nav bar*/
+.main {
+  margin-left: 120px; /* Same as the width of the sidebar */
+  margin-bottom: 10px;
+  padding: 0px 10px;
+}
 
 .container {
   padding: 0 15px;
@@ -254,11 +252,6 @@ a:active {
  svg {
    max-width: 250px;
  }
-
- .modal-content {
-   width: 100%;
- }
-}
 
   nav {
     width: auto;
