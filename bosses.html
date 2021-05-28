@@ -190,16 +190,47 @@
           <div id="section-2">
             <!--project section-->
             <div class="row">
-              <div class="big column col-md-6">
-                  <img src="img/backyardBosses/justAnswer.png" alt="SWOT Analysis for JustAnswer">
+              <div class="big columnB">
+                  <img src="img/backyardBosses/justAnswer.png" alt="SWOT Analysis for JustAnswer" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
               </div>
-              <div class="big column col-md-6">
-                  <img src="img/backyardBosses/prestoExperts.png" alt="SWOT Analysis for Presto Experts">
+              <div class="big columnB">
+                  <img src="img/backyardBosses/prestoExperts.png" alt="SWOT Analysis for Presto Experts" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
               </div>
             </div>
+
+
+
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+              <div class="modal-content">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 2</div>
+                  <img src="img/backyardBosses/justAnswer.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 2</div>
+                  <img src="img/backyardBosses/prestoExperts.png" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+
+              </div>
+            </div>
+
+
+
+            <div>
             <h3>Competitive Analysis</h3>
             <p>To get a better idea of what's available on the market, I researched top competitors Just Answer + Presto Experts. Both services offer 24/7 outreach, through chat or a phone call, to verified Experts in a wide range of fields. Unfortunately, both of these also have complaints about their costs, which highlighted an opportunity for Backyard Bosses. After researching these competitors for their key objectives, overall strategy, and market advantages, I was able to create these SWOT analysis.
             </p>
+            </div>
           </div>
 
           <div>
