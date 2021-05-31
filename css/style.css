@@ -176,6 +176,12 @@ a:active {
   color: #0274C7;
 }
 
+.anchor a {
+  position:relative;
+  margin-top: -92px;
+  visibility:hidden;
+}
+
 .button {
   display: inline-block;
   background-color: #202020;
