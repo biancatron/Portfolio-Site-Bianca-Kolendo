@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="css/lightbox.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/b9ec442e0d.js" crossorigin="anonymous"></script>
@@ -169,9 +170,9 @@
               <p>September 2020 - April 2021</p>
             </div>
 
-            <div id="section-1" class="anchor">
+            <div>
               <!--project section-->
-              <h3>Inspiration</h3>
+              <h3 id="section-1">Inspiration</h3>
               <p>As a new homeowner myself, I began creating Backyard Bosses out of my own curiosities. I'm fortunate to know a variety of homeowners- from recent purchasers to long time dwellers, experimental DIYers to nervous starters, families,
                 pet owners, party hosts, gardeners, and more. Having this network helped me start thinking about my potential user's problems more broadly. I outlined these user problems through the Double Diamond Strategy.
               </p>
@@ -188,45 +189,19 @@
               </p>
             </div>
 
-            <div id="section-2" class="anchor">
+            <div>
               <!--project section-->
+              <h3 id="section-2">Competitive Analysis</h3>
               <div class="row">
-                <div class="big columnB">
-                  <img src="img/backyardBosses/justAnswer.png" alt="SWOT Analysis for JustAnswer" onclick="openModal ();currentSlide(2)" class="hover-shadow cursor">
+                <div class="columnB">
+                    <a href="img/backyardBosses/justAnswer.png" data-lightbox="image-1" alt="SWOT Analysis for JustAnswer"><img class="big" src="img/backyardBosses/justAnswer.png"></a>
                 </div>
-                <div class="big columnB">
-                  <img src="img/backyardBosses/prestoExperts.png" alt="SWOT Analysis for Presto Experts" onclick="openModal ();currentSlide(2)" class="hover-shadow cursor">
-                </div>
-              </div>
-
-              <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-
-                  <div class="mySlides">
-                    <div class="numbertext">1 / 2</div>
-                    <img src="img/backyardBosses/justAnswer.png" style="width:100%" alt="SWOT Analysis for JustAnswer">
-                  </div>
-
-                  <div class="mySlides">
-                    <div class="numbertext">2 / 2</div>
-                    <img src="img/backyardBosses/prestoExperts.png" style="width:100%" alt="SWOT Analysis for Presto Experts">
-                  </div>
-
-                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                  <div class="caption-container">
-                    <p id="caption"></p>
-                  </div>
-
+                <div class="columnB">
+                  <a href="img/backyardBosses/prestoExperts.png" data-lightbox="image-2" alt="SWOT Analysis for Presto Experts"><img class="big" src="img/backyardBosses/prestoExperts.png"></a>
                 </div>
               </div>
-
-
 
               <div>
-                <h3>Competitive Analysis</h3>
                 <p>To get a better idea of what's available on the market, I researched top competitors Just Answer + Presto Experts. Both services offer 24/7 outreach, through chat or a phone call, to verified Experts in a wide range of fields.
                   Unfortunately, both of these also have complaints about their costs, which highlighted an opportunity for Backyard Bosses. After researching these competitors for their key objectives, overall strategy, and market advantages, I was
                   able to create these SWOT analysis.
@@ -252,17 +227,21 @@
                 <!--row for columns-->
                 <div class="column col-md-6">
                   <!--column1-->
+                  <a href="img/backyardBosses/taskChat_2x.jpg" data-lightbox="image-3" alt="User task to connect with Expert">
                   <picture class="big">
                     <source srcset="img/backyardBosses/taskChat_1x.jpg" media="(max-width:767px)">
                     <img src="img/backyardBosses/taskChat_2x.jpg" alt="User task to connect with Expert">
                   </picture>
+                  </a>
                 </div>
                 <div class="column col-md-6">
                   <!--column2-->
+                  <a href="img/backyardBosses/taskVideo_2x.jpg" data-lightbox="image-4" alt="User task to watch video guide">
                   <picture class="big">
                     <source srcset="img/backyardBosses/taskVideo_1x.jpg" media="(max-width:767px)">
                     <img src="img/backyardBosses/taskVideo_2x.jpg" alt="User task to watch video guide">
                   </picture>
+                  </a>
                 </div>
               </div>
             </div>
@@ -270,13 +249,13 @@
 
           <div>
             <!--project section-->
-            <div id="section-3" class="anchor">
+            <div>
+              <h3 id="section-3">User Journey + Flow</h3>
               <picture class="big">
                 <source srcset="img/backyardBosses/userJourney_1x.jpg" media="(max-width:767px)">
                 <img src="img/backyardBosses/userJourney_2x.jpg" alt="User journey to completing a butterfly garden">
               </picture>
             </div>
-            <h3>User Journey + Flow</h3>
             <p>Once I understood who my users were, I began considering how they'd approach their goals. By creating user journey maps and user flows, I was laying down the foundation of the app's functionality.
             </p>
           </div>
@@ -284,10 +263,12 @@
           <div>
             <!--project section-->
             <div>
+              <a href="img/backyardBosses/sitemap_2x.jpg" data-lightbox="image-5" alt="Sitemap for Backyard Bosses">
               <picture class="big">
                 <source srcset="img/backyardBosses/sitemap_1x.jpg" media="(max-width:767px)">
                 <img src="img/backyardBosses/sitemap_2x.jpg" alt="Sitemap for Backyard Bosses">
               </picture>
+              </a>
             </div>
             <h3>Information Architecture</h3>
             <p>Backyard Bosses' Site Map evolved based on the results from an open card sort. In this original outline, the content was spread out into unique areas in the app. Based on 5 participants, the most notable feedback was the lack of a
@@ -298,17 +279,21 @@
 
           <div>
             <!--project section-->
-            <div id="section-4" class="anchor">
+            <div>
+              <h3 id="section-4">Wireframes + Mockups</h3>
+              <a href="img/backyardBosses/loFiWireframes_2x.jpg" data-lightbox="image-6" alt="Sitemap for Backyard Bosses">
               <picture class="big">
                 <source srcset="img/backyardBosses/loFiWireframes_1x.jpg" media="(max-width:767px)">
                 <img src="img/backyardBosses/loFiWireframes_2x.jpg" alt="Low fidelity wireframes">
               </picture>
+              </a>
+              <a href="img/backyardBosses/midFiWireframes_2x.jpg" data-lightbox="image-7" alt="Mid fidelity wireframes">
               <picture class="big">
                 <source srcset="img/backyardBosses/midFiWireframes_1x.jpg" media="(max-width:767px)">
                 <img src="img/backyardBosses/midFiWireframes_2x.jpg" alt="Mid fidelity wireframes">
               </picture>
+              </a>
             </div>
-            <h3>Wireframes + Mockups</h3>
             <p>Having an organized plan for user tasks and their flow, the first stage of low fidelity wireframes were sketched on paper. After sharing and gathering feedback from friends and colleagues, Backyard Bosses was ready for an upgrade. The
               mid-fidelity wireframes, and prototype, were built with Figma. I approached the design with the user's location in mind. As a backyard project aide, the screens needed to have high contrast to be able to be read outdoors easily. This
               updated mid-fidelity prototype was tested with 6 homeowners.
@@ -317,13 +302,15 @@
 
           <div>
             <!--project section-->
-            <div id="section-5" class="anchor">
+            <div>
+              <h3 id="section-5">Usability Testing</h3>
+              <a href="img/backyardBosses/userInt_2x.jpg" data-lightbox="image-8" alt="Video screenshot of usability test">
               <picture class="big">
                 <source srcset="img/backyardBosses/userInt_1x.jpg" media="(max-width:767px)">
                 <img src="img/backyardBosses/userInt_2x.jpg" alt="Video screenshot of usability test">
               </picture>
+              </a>
             </div>
-            <h3>Usability Testing</h3>
             <p>To prepare for usability testing, I created a usability test plan. This included goals and objectives for testing, a script to keep sessions consistent and on track, and defined metrics to measure.
               <br>
               Six homeowners, between the ages of 29-48, participated in moderated remote testing. All participants saw the value in and were excited for this unique app. Onboarding had the most issues, but there was also trouble with the app's main
@@ -391,18 +378,20 @@
           <div>
             <!--project section-->
             <div>
+              <a href="img/backyardBosses/hiFiWireframes_2x.jpg" data-lightbox="image-9" alt="High fidelity wireframes">
               <picture class="big">
                 <source srcset="img/backyardBosses/hiFiWireframes_1x.jpg" media="(max-width:767px)">
                 <img src="img/backyardBosses/hiFiWireframes_2x.jpg" alt="High fidelity wireframes">
               </picture>
+            </a>
             </div>
             <h3>High Fidelity Wireframes + Prototype</h3>
             <p>Try out the Backyard Bosses <a href="https://www.figma.com/proto/vFkYKvjC3PBiD9olqYw3Iv/mobile-wireframes%2F%2FprototypeHF?scaling=scale-down&page-id=463%3A210&node-id=1%3A688" target="_blank">prototype on Figma!</a>
             </p>
           </div>
 
-          <div id="section-6" class="anchor">
-            <h2 class="center">Reflection + Conclusion</h2>
+          <div>
+            <h2 id="section-6" class="center">Reflection + Conclusion</h2>
             <p>
               Backyard Bosses can always improve, and the best way to do that is with continued user testing. Throughout this process, I’ve heard of great feature suggestions and have tucked away a few ideas of my own. With this base of
               functionality, Backyard Bosses is also a good playground to test bells and whistles, like animation.
@@ -418,8 +407,8 @@
 
   </main>
 
-  <footer id="contact">
-    <div class="container center main">
+  <footer id="contact" class="main">
+    <div class="container center">
       <div>
         <h2>Get in touch</h2>
         <p>
@@ -569,6 +558,7 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
+  <script src="js/lightbox.js"></script>
 
 </body>
 
