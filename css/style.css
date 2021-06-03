@@ -14,6 +14,7 @@ header {
   position: fixed;
   box-shadow: 0 3px 5px 0 rgba(15, 0, 15, 0.5);
   width: 100%;
+  z-index: 2;
 }
 
 nav > ul {
@@ -102,6 +103,12 @@ body {
   color: #202020;
 }
 
+#quote {
+  padding: 0 15px;
+  background-color: #202020;
+  color: #ffda23;
+}
+
 #contact {
   padding-top: 15px;
   background-color: #ecf0f1;
@@ -115,14 +122,12 @@ h4 {
   color: #115f7e;
   line-height: 1.2;
   scroll-margin-top: 100px;
-  scroll-snap-margin-top: 100px;
 }
 
 h1 {
   font-size: 2em;
   font-weight: 700;
   scroll-margin-top: 120px;
-  scroll-snap-margin-top: 120px;
 }
 
 h2 {
@@ -136,7 +141,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 700;
 }
 
@@ -305,6 +310,10 @@ body {
     max-width: 250px;
   }
 
+  #svgsand svg {
+    max-width: 400px;
+  }
+
   nav {
     width: auto;
     float: right;
@@ -354,4 +363,47 @@ h3 {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+/* animation */
+@keyframes color-change {
+  0% { fill: #e6e6e6; }
+  50% { fill: #fcffad; }
+  100% { fill: #f76414; }
+}
+
+#_x3C_moon_x3E_ {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes batA-move {
+  from { transform: translate(-350px, 50px); }
+  to { transform: translate(100px, 10px); }
+}
+
+#_x3C_batWingS_x3E_ {
+  animation-duration: 6s;
+  animation-name: batA-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes batB-move {
+  from { transform: translate(-100px, 120px); }
+  to { transform: translate(0, 10px); }
+  from { transform: rotate(-15deg); }
+  to { transform: rotate(15deg); }
+}
+
+#_x3C_batWingsT_x3E_ {
+  animation-duration: 3s;
+  animation-name: batB-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
